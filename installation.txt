@@ -10,7 +10,16 @@ systemctl enable jenkins
 systemctl start jenkins
 systemctl status jenkins
 
-Install git as a root user
+To uninstall Jenkins 
+---------------------------------
+sudo service jenkins stop 
+sudo yum remove jenkins 
+sudo rm -r /var/lib/jenkins
+
+Install git 
 -----------------------------------
+As root user execute following commands
 yum update
 yum install git
+
+
