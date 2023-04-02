@@ -1,3 +1,5 @@
+Jenkins Installation ON AWS EC2 REDHAT instace
+-----------------------------------------------------
 sudo su -
 yum install wget -y
 wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
@@ -7,3 +9,8 @@ yum install jenkins -y
 systemctl enable jenkins
 systemctl start jenkins
 systemctl status jenkins
+
+Install git as a root user
+-----------------------------------
+yum update
+yum install git
